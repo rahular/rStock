@@ -50,7 +50,7 @@ So we decided that an artificial neural network model will be best suited for t
 <h2>System Architecture</h2>
 The architecture has 4 basic parts :
 <br /><br />
-<img class="size-medium wp-image-134 aligncenter" alt="SysArch" src="http://rahular.com/wp-content/uploads/2013/12/SysArch.png" />
+<img alt="SysArch" src="http://rahular.com/wp-content/uploads/2013/12/SysArch.png" />
 <br />
 <ol>
 	<li><strong>Teacher : </strong>We have used Stockfish as our teacher engine as it is the most successful and powerful open source chess engine with an ELO rating of 3222 (as of November, 2013). We have used it in conjunction with SCID which is a UCI based GUI for chess play and analysis. We use this engine to create a dataset of board positions (thinking lines) which have been churned out by Stockfish before it makes a move during gameplay.</li>
@@ -76,7 +76,7 @@ We have created a fork to the original UCI Stockfish to incorporate reinforcemen
 The Primary programming language which have used to implement our system is C++, and the complete source code with instructions is available at the URL mentioned in the abstract. We have modified the eval and search module to incorporate our neural net-
 work into the standard Stockfish engine and created different modes so that we can incorporate both the teacher and the player inside a single system. We have incorporated 4 different modes into Stockfish itself so as to avoid redundancy of code.
 <br /><br />
-<a href="http://rahular.com/wp-content/uploads/2013/12/sf_uml.jpg"><img class="size-medium wp-image-133 aligncenter" alt="sf_uml" src="http://rahular.com/wp-content/uploads/2013/12/sf_uml-300x182.jpg" width="300" height="182" /></a>
+<img alt="sf_uml" src="http://rahular.com/wp-content/uploads/2013/12/sf_uml-300x182.jpg" />
 <br />;
 <ul>
 	<li><strong><strong>Mode 0 : </strong></strong>This mode is used to play the default Stockfish engine but with a logging function which writes its thinking lines on to a dump file which acts as the training data for the network.</li>
