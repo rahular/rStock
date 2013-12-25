@@ -1,0 +1,4 @@
+sudo apt-get install tcl-dev
+sudo apt-get install tk-dev
+./configure
+sudo make install
