@@ -8,7 +8,7 @@
     
     <link href="./stylesheets/stylesheet.css" rel="stylesheet" />
 
-    <title>Rstock</title>
+    <title>rStock</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/rahular/rStock">View on GitHub</a>
 
-          <h1 id="project_title">Rstock</h1>
+          <h1 id="project_title">rStock</h1>
           <h2 id="project_tagline"></h2>
 
             <section id="downloads">
@@ -77,7 +77,7 @@ The Primary programming language which have used to implement our system is C++,
 work into the standard Stockfish engine and created different modes so that we can incorporate both the teacher and the player inside a single system. We have incorporated 4 different modes into Stockfish itself so as to avoid redundancy of code.
 <br /><br />
 <img alt="sf_uml" src="http://rahular.com/wp-content/uploads/2013/12/sf_uml-300x182.jpg" />
-<br />;
+<br />
 <ul>
 	<li><strong><strong>Mode 0 : </strong></strong>This mode is used to play the default Stockfish engine but with a logging function which writes its thinking lines on to a dump file which acts as the training data for the network.</li>
 	<li><strong><strong>Mode 1 : </strong></strong>This mode is used to train the neural network in an online manner. The network is trained as and when the teacher thinks i.e the training data is provided to the network during the game itself. This mode is highly time consuming because the teacher generally thinks at a depth of 16 to 20 which means the number of thinking lines is exponential in depth. Therefore this mode is not ideal.</li>
